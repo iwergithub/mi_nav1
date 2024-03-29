@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --dark-brown: #0D0D0D;
+    --d1: #8C3604;
+    --d2: #A62626;
+    --d3: #EAE2D9;
+    --d4: #000000;
+    --d5: #400F0F;
+    --d6: rgb(242, 211, 172);
+}   
+*{
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+}
+body{
+    background-color: #400F0F;
+    margin: 0;
+    padding: 0;
+    font-family: 'rubik';
+}
+.contenedor{
+    margin: 0 auto;
+}
+header{
+    background: var(--d2);
+    height: 60px;
+    position: relative;
+}
+header nav{
+    margin-left: 650px;
+}
+header nav>ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header nav>ul>li{
+    position: relative;
+}
+header nav>ul>li>a{
+    display: block;
+    padding: 20px 25px 21px 25px;
+    text-decoration: none;
+    color: var(--d3);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header nav>ul>li>a:hover{
+    background: linear-gradient(180deg, rgba(240,169,86,1) 40%, rgba(166,38,38,1) 100%);
+}
+header nav>ul>li>a:active{
+    background: var(--d3);
+}
+header nav ul li a span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.caret_down{
+    background: url(../imgs/caret_down.png);
+}
+.caret_up{
+    background: url(../imgs/caret_up.png);
+}
+header nav>ul>li:hover .submenu{
+    display: flex;
+}
+.submenu {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--d3);
+    display: none;
+}
+.submenu li{
+    border-right: 1px solid var(--d4);
+}
+.submenu li a{
+    display: block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--d4);
+}
+.submenu li a:hover{
+    background: var(--d6);
+}
+.submenu li a:active{
+    background:var(--d);
+}
+main {
+    position: relative;
+    padding: 0px;
+}
+main div h1 a{
+    position: absolute;
+    top: 30px;
+    width: 618.47px;
+    height: 750px;
+    text-indent: -9999px;
+    background-image: url(../imgs/bezierbar_logo.svg);  
+}
+main .hero .hero1 img{
+    margin-top: 20px;
+    width: 100%;
+    height: 90vh;
+}
+.frase{
+    position: absolute;
+    font-family: "Lobster Two";
+    font-style: italic;
+    color: var(--d3);
+    font-size: 70pt;
+    top: -5px;
+    left: 800px;
+    line-height: 0.75;
+    text-align: right;
+}
+main .hero .cerveza img{
+    position:absolute;
+    width: 360px;
+    rotate: 20deg;
+    top: 600px;
+    left: 800px;
+}
+main .acerca{
+    position: absolute;
+    text-decoration: none;
+    height: 80px;
+    background: var(--d3);
+    padding: 30px 30px;
+    text-transform: uppercase;
+    color: var(--d2);
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgba(166, 38, 38, 1);
+    top:530px;
+    left: 1300px;
+    font-size: 18pt;
+}
+main .acerca:hover{
+    background-color: var(--d6);
+    color: var(--d4);
+    top:535px;
+    left: 1305px;
+    box-shadow: 0px 0px 20px rgba(242, 211, 172, 0.8);
+    
+
+}
+footer{
+    background: #59463F;
+    padding: 15px;
+}
